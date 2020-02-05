@@ -1,4 +1,4 @@
-package learn.array
+package problems.array
 
 import org.scalatest._
 import org.scalatest.matchers.should.Matchers
@@ -9,7 +9,7 @@ class InsertingElementInArrayForTheGivenIndexTest extends FlatSpec with Matchers
   private val valueOfIndex: Int                       = 56
   private val insertingElementInArrayForTheGivenIndex = InsertingElementInArrayForTheGivenIndex
 
-  it should "insert the element at the mentioned index " in {
+  it should s"insert the element at the mentioned index $indexToInsert " in {
     val testArray   = Array(1, 2, 3, 4, 5, 6, 8, 0)
     val resultArray = Array(1, 2, 56, 3, 4, 5, 6, 8)
     val results = insertingElementInArrayForTheGivenIndex.insertElementAtIndex(indexToInsert,
