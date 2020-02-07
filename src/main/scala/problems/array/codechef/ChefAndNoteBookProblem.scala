@@ -1,4 +1,4 @@
-package problems.array
+package problems.array.codechef
 
 import scala.io.StdIn
 

@@ -1,8 +1,9 @@
-package problems.array
+package problems.array.coedechef
 
 import org.scalatest._
 import org.scalatest.matchers.should.Matchers
 import org.scalatest.prop.TableDrivenPropertyChecks
+import problems.array.codechef.ElephantAndCandyProblem
 
 class ElephantAndCandyProblemTest extends FlatSpec with Matchers with TableDrivenPropertyChecks {
   private val elephantAndCandyProblem = ElephantAndCandyProblem
