@@ -12,17 +12,19 @@ package problems.array.leetcode
 object ContainerWithMostWaterProblem extends App {
 
   def maxArea(height: Array[Int]): Int = {
-    var left    = 0
-    var right   = height.length - 1
-    var maxArea = 0
-    if (height.length != 0 && height != null)
-      while (left < right) {
-        maxArea = Math.max(maxArea, (right - left) * Math.min(height(left), height(right)))
-        if (height(left) < height(right))
-          left += 1
-        else right -= 1
-      }
-    maxArea
+    if (height.length != 0 && height != null) {
+      var left    = 0
+      var right   = height.length - 1
+      var maxArea = 0
+      if (height.length != 0 && height != null)
+        while (left < right) {
+          maxArea = Math.max(maxArea, (right - left) * Math.min(height(left), height(right)))
+          if (height(left) < height(right))
+            left += 1
+          else right -= 1
+        }
+      maxArea
 
+    } else 0
   }
 }
